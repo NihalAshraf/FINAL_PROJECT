@@ -59,150 +59,12 @@
   background-clip: text;
 }
 
-/* Navigation Menu */
-.navbar-menu {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 
-/* Auth Buttons */
-.navbar-auth {
-  display: flex;
-  gap: 12px;
-}
 
-.btn-signin,
-.btn-signup {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-}
 
-.btn-signin {
-  background: transparent;
-  color: #6b7280;
-  border: 2px solid #e5e7eb;
-}
-
-.btn-signin:hover {
-  background: #f9fafb;
-  color: #1f2937;
-  border-color: #d1d5db;
-}
-
-.btn-signup {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: 2px solid transparent;
-}
-
-.btn-signup:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-}
-
-/* Mobile Toggle */
-.navbar-mobile-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 4px;
-}
-
-.hamburger {
-  width: 25px;
-  height: 3px;
-  background: #1f2937;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.hamburger.active:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
-}
-
-/* Mobile Menu */
-.mobile-menu {
-  display: none;
-  background: white;
-  border-top: 1px solid #e5e7eb;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-menu.active {
-  display: block;
-}
-
-.mobile-nav-link {
-  display: block;
-  padding: 12px 0;
-  text-decoration: none;
-  color: #6b7280;
-  font-weight: 500;
-  border-bottom: 1px solid #f3f4f6;
-  transition: color 0.3s ease;
-}
-
-.mobile-nav-link:hover {
-  color: #1f2937;
-}
-
-.mobile-auth {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.btn-signin-mobile,
-.btn-signup-mobile {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-
-.btn-signin-mobile {
-  background: transparent;
-  color: #6b7280;
-  border: 2px solid #e5e7eb;
-}
-
-.btn-signup-mobile {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .navbar-menu {
-    display: none;
-  }
-  
-  .navbar-mobile-toggle {
-    display: flex;
-  }
-  
   .navbar-container {
     padding: 0 15px;
   }
@@ -214,15 +76,6 @@
   .heart-icon {
     font-size: 20px;
   }
-}
-
-/* Mobile menu adjustments */
-.mobile-menu {
-  padding: 15px 20px;
-}
-
-.mobile-auth {
-  margin-top: 0;
 }
 
 @media (max-width: 480px) {

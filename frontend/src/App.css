@@ -34,6 +34,32 @@ html {
   outline-offset: 2px;
 }
 
+/* Coming Soon Placeholder */
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.coming-soon::before {
+  content: "🚧";
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Legacy styles - keeping for compatibility */
 .App-logo {
   height: 40vmin;
   pointer-events: none;

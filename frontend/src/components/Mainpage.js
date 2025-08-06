@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Signup from './Signup';
 import './Mainpage.css';
 
 const RoleSelection = () => {
+  const navigate = useNavigate();
   const [hoveredRole, setHoveredRole] = useState(null);
   const [showLoginForm, setShowLoginForm] = useState(false);
   const [showSignupForm, setShowSignupForm] = useState(false);
@@ -20,7 +22,18 @@ const RoleSelection = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     console.log(`Logging in as ${selectedRole}`, loginData);
-    // Add authentication logic here
+    
+    // Simulate authentication logic
+    if (loginData.email && loginData.password) {
+      // Redirect based on selected role
+      if (selectedRole === 'Parent') {
+        navigate('/parent-dashboard');
+      } else if (selectedRole === 'Doctor') {
+        navigate('/doctor-dashboard');
+      }
+    } else {
+      alert('Please enter both email and password');
+    }
   };
 
   const handleBackToRoles = () => {

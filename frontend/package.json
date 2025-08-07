@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@mediapipe/tasks-vision": "^0.10.22-rc.20250304",
+=======
+>>>>>>> 9f01366faaa33a264ce2da2dd7f8f113efcbcd59
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",

@@ -26,7 +26,6 @@ function App() {
           {/* Doctor Routes - Placeholder for future */}
           <Route path="/doctor-dashboard" element={<div className="coming-soon">Doctor Dashboard - Coming Soon</div>} />
           <Route path="/doctor/*" element={<div className="coming-soon">Doctor Dashboard - Coming Soon</div>} />
-
           {/* Catch all route - redirect to home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
